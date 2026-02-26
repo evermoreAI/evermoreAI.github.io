@@ -569,11 +569,12 @@ h2 em { font-style: italic; color: var(--gold); }
   border: none;
   border-radius: 10px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   width: 100%;
+  white-space: nowrap;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
 .cta-btn:hover {
@@ -836,10 +837,11 @@ h2 em { font-style: italic; color: var(--gold); }
         <li>6 output formats per case</li>
         <li>Priority email support</li>
         <li>Every new feature as it ships</li>
-        <li>Best value for established homes</li>
+        <li>Best value for busy homes</li>
       </ul>
       <a href="YOUR_ANNUAL_STRIPE_LINK" class="cta-btn" id="annualBtn">
-        Start Annual — Save $360 →
+        Start Annual →
+      
       </a>
     </div>
   </div>
@@ -849,7 +851,7 @@ h2 em { font-style: italic; color: var(--gold); }
 <footer class="site-footer">
   <div class="footer-logo">Ever<span>more</span></div>
   <div class="footer-copy">© 2026 Evermore. Built in Edmonton, Alberta.</div>
-  <div class="footer-contact">Questions? <a href="mailto:connor@evermore-app.com">connor@evermore-app.com</a></div>
+  <div class="footer-contact">Questions? <a href="/cdn-cgi/l/email-protection#4f2c202121203d0f2a392a3d22203d2a622e3f3f612c2022"><span class="__cf_email__" data-cfemail="5f3c303131302d1f3a293a2d32302d3a723e2f2f713c3032">[email&#160;protected]</span></a></div>
 </footer>
 
 <!-- NOTIFICATION -->
@@ -858,7 +860,7 @@ h2 em { font-style: italic; color: var(--gold); }
   <span id="notifText"></span>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function showNotification(msg) {
   document.getElementById('notifText').textContent = msg;
   const n = document.getElementById('notification');
@@ -873,14 +875,4 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
   });
 });
-document.querySelectorAll('.cta-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    if (btn.getAttribute('href')?.includes('YOUR_')) {
-      e.preventDefault();
-      showNotification('Add your Stripe payment link to activate this button.');
-    }
-  });
-});
-</script>
-</body>
-</html>
+document.querySelectorAll('.cta-btn').forEach(b
