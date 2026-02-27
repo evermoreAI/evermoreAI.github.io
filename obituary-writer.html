@@ -138,33 +138,6 @@
     margin: 0 auto 48px;
   }
 
-  .hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    margin-bottom: 64px;
-    padding: 28px;
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-  }
-
-  .stat { text-align: center; }
-  .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 36px;
-    font-weight: 500;
-    color: var(--ink);
-    display: block;
-  }
-  .stat-label {
-    font-size: 12px;
-    color: var(--ink-faint);
-    font-weight: 400;
-    letter-spacing: 0.04em;
-  }
-
   /* ── MAIN APP CARD ── */
   .app-section {
     max-width: 1100px;
@@ -665,178 +638,6 @@
     50% { opacity: 0.6; transform: scale(0.85); }
   }
 
-  /* ── BELOW APP ── */
-  .social-proof {
-    max-width: 1100px;
-    margin: 64px auto;
-    padding: 0 48px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
-  .testimonial {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px;
-    position: relative;
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-
-  .testimonial:hover {
-    box-shadow: var(--shadow);
-    transform: translateY(-2px);
-  }
-
-  .quote-mark {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 64px;
-    color: var(--gold);
-    opacity: 0.3;
-    line-height: 0.6;
-    margin-bottom: 16px;
-  }
-
-  .testimonial-text {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: var(--ink-soft);
-    margin-bottom: 20px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    font-style: italic;
-  }
-
-  .testimonial-author {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--ink);
-  }
-
-  .testimonial-role {
-    font-size: 11px;
-    color: var(--ink-faint);
-    margin-top: 2px;
-  }
-
-  /* ── PRICING ── */
-  .pricing {
-    max-width: 680px;
-    margin: 0 auto 80px;
-    padding: 0 48px;
-    text-align: center;
-  }
-
-  .pricing h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 40px;
-    font-weight: 300;
-    color: var(--ink);
-    margin-bottom: 12px;
-  }
-
-  .pricing-sub {
-    font-size: 15px;
-    color: var(--ink-faint);
-    margin-bottom: 40px;
-  }
-
-  .price-card {
-    background: var(--ink);
-    border-radius: 20px;
-    padding: 48px;
-    color: var(--cream);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .price-card::before {
-    content: '';
-    position: absolute;
-    top: -60px; right: -60px;
-    width: 200px; height: 200px;
-    border-radius: 50%;
-    background: var(--gold);
-    opacity: 0.06;
-  }
-
-  .price-amount {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
-    font-weight: 300;
-    color: var(--white);
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-
-  .price-amount sup {
-    font-size: 28px;
-    vertical-align: top;
-    margin-top: 16px;
-    display: inline-block;
-    color: var(--gold);
-  }
-
-  .price-period {
-    font-size: 14px;
-    color: rgba(255,255,255,0.4);
-    margin-bottom: 36px;
-  }
-
-  .price-features {
-    list-style: none;
-    text-align: left;
-    margin-bottom: 36px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .price-features li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    color: rgba(255,255,255,0.75);
-  }
-
-  .price-features li::before {
-    content: '';
-    width: 16px; height: 16px;
-    border-radius: 50%;
-    background: var(--gold);
-    flex-shrink: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8l3.5 3.5L13 5' stroke='%231a1612' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-size: cover;
-  }
-
-  .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px 40px;
-    background: var(--gold);
-    color: var(--ink);
-    border: none;
-    border-radius: 10px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-    width: 100%;
-  }
-
-  .cta-btn:hover {
-    background: var(--gold-light);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(184,151,90,0.35);
-  }
-
   /* NOTIFICATION */
   .notification {
     position: fixed;
@@ -969,7 +770,7 @@
     .form-panel { border-right: none; border-bottom: 1px solid var(--border); }
     .social-proof { grid-template-columns: 1fr; padding: 0 24px; }
     .pricing { padding: 0 24px; }
-    .hero-stats { gap: 24px; flex-wrap: wrap; }
+  
     .field-grid { grid-template-columns: 1fr; }
     .field-grid.third { grid-template-columns: 1fr 1fr; }
   }
@@ -983,28 +784,9 @@
 </nav>
 
 <section class="hero">
-  <div class="hero-eyebrow">AI-Powered Tribute Writing</div>
+  <div class="hero-eyebrow">New Tribute</div>
   <h1>Write <em>meaningful</em> obituaries<br>in under five minutes</h1>
   <p class="hero-sub">Stop spending 45 minutes per case on paperwork. Evermore turns your notes into dignified, publication-ready tributes — formatted for every outlet automatically.</p>
-
-  <div class="hero-stats">
-    <div class="stat">
-      <span class="stat-num">45 min</span>
-      <span class="stat-label">Saved per case</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">6+</span>
-      <span class="stat-label">Formats generated</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">100%</span>
-      <span class="stat-label">Director reviewed</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">$0</span>
-      <span class="stat-label">Setup fee</span>
-    </div>
-  </div>
 </section>
 
 <section class="app-section">
@@ -1238,51 +1020,6 @@
   </div>
 </section>
 
-<!-- Testimonials -->
-<section class="social-proof">
-  <div class="testimonial">
-    <div class="quote-mark">"</div>
-    <p class="testimonial-text">We handle 140 cases a year. Evermore has given me back at least two full days a month. The quality is better than what I was writing myself, and families genuinely comment on it.</p>
-    <div class="testimonial-author">David Hartmann</div>
-    <div class="testimonial-role">Hartmann Family Funeral Home, Cincinnati</div>
-  </div>
-  <div class="testimonial">
-    <div class="quote-mark">"</div>
-    <p class="testimonial-text">I was skeptical about AI for something this personal. But the drafts are warm, not robotic — and I still review everything before it goes out. It's a writing assistant, not a replacement.</p>
-    <div class="testimonial-author">Linda Okafor</div>
-    <div class="testimonial-role">Okafor & Sons Memorial Chapel, Atlanta</div>
-  </div>
-  <div class="testimonial">
-    <div class="quote-mark">"</div>
-    <p class="testimonial-text">The multi-format export alone is worth it. One click and I have the newspaper notice, the website version, and the service program. That used to take me an extra hour per case.</p>
-    <div class="testimonial-author">Tom Bellerose</div>
-    <div class="testimonial-role">Bellerose Memorial, Burlington, VT</div>
-  </div>
-</section>
-
-<!-- Pricing -->
-<section class="pricing">
-  <h2>Simple, honest pricing</h2>
-  <p class="pricing-sub">One plan. Everything included. Cancel anytime.</p>
-
-  <div class="price-card">
-    <div class="price-amount"><sup>$</sup>99</div>
-    <div class="price-period">per month, per location</div>
-    <ul class="price-features">
-      <li>Unlimited obituary generations</li>
-      <li>6 auto-formatted outputs per case</li>
-      <li>Case management & history</li>
-      <li>Family review portal (share a link)</li>
-      <li>Newspaper submission templates</li>
-      <li>NFDA-compliant record keeping</li>
-      <li>Email & phone support</li>
-    </ul>
-    <a class="cta-btn" href="#" onclick="showNotification('Demo booked! We\'ll be in touch within 24 hours.')">
-      Start Free 30-Day Trial →
-    </a>
-  </div>
-</section>
-
 <!-- Notification -->
 <div class="notification" id="notification">
   <div class="notification-dot"></div>
@@ -1301,17 +1038,6 @@ function initApiKey() {
   showConnected();
 }
 
-function saveApiKey() {
-  const val = document.getElementById('apiKeyInput').value.trim();
-  if (!val.startsWith('sk-ant-')) {
-    document.getElementById('apiKeyInput').style.borderColor = '#e53935';
-    document.getElementById('apiStatus').textContent = '● Invalid key format';
-    document.getElementById('apiStatus').className = 'api-status disconnected';
-    setTimeout(() => {
-      document.getElementById('apiKeyInput').style.borderColor = '';
-    }, 1500);
-    return;
-  }
   ANTHROPIC_API_KEY = val;
   localStorage.setItem('evermore_api_key', val);
   showConnected();
@@ -1353,9 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (p.toString()) showNotification('Case data prefilled from Eternum ✓');
   }
 
-  document.getElementById('apiKeyInput').addEventListener('keydown', e => {
-    if (e.key === 'Enter') saveApiKey();
-  });
+  
 });
 
 
@@ -1435,12 +1159,7 @@ function getFormData() {
 }
 
 async function generateObituary() {
-  if (!ANTHROPIC_API_KEY) {
-    document.getElementById('apiKeyInput').focus();
-    document.getElementById('apiKeyInput').style.borderColor = 'var(--gold)';
-    showNotification('Please enter your API key first ↑');
-    return;
-  }
+
   if (isGenerating) return;
   isGenerating = true;
 
