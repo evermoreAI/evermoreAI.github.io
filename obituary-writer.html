@@ -1038,11 +1038,6 @@ function initApiKey() {
   showConnected();
 }
 
-  ANTHROPIC_API_KEY = val;
-  localStorage.setItem('evermore_api_key', val);
-  showConnected();
-  showNotification('API key saved — Evermore is live ✓');
-}
 
 function showConnected() {
   document.body.classList.add('has-api-key');
